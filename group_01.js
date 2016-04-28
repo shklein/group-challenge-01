@@ -55,5 +55,7 @@ var bonusAmount = 0;
 
 
 for (var i = 0; i<employees.length; i++){
-  console.log(findBonus(employees[i]));
+
+  var face = findBonus(employees[i]);
+  document.write("<ul><li>Name: " + face[0] + "</li><li>Bonus percentage: " + (face[1] * 100) + "%</li><li>Total compensation: $" + face[2] + "</li><li>Rounded bonus: $" + face[3] + "</li></ul>");
 }
