@@ -12,6 +12,9 @@ var total = 0;
 
 function getSTI (employee) {
   //step 1: find STI percentage
+  var array = [];
+  array[0] == employee[0];
+
   switch(employee[3]) {
     case 3:
       percentage = 0.04;
@@ -33,5 +36,7 @@ function getSTI (employee) {
     percentage -= 0.01;
   }
   if (percentage > 0.13) {
-    percentage = 0.12;
+    percentage = 0.13;
   }
+
+  array[1] == percentage;
